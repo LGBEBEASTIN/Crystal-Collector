@@ -1,0 +1,45 @@
+body {
+    background-color: lightgray;
+}
+
+.jumbotron {
+    background-color: darkgray;
+}
+
+#gameSection,
+#scoreSection {
+    background-color: darkgray;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#buttonSection {
+    padding: 0px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+p {
+    font-family: 'Kalam', cursive;
+}
+
+.numberBox {
+    font-size: 100px;
+    margin: 0px;
+}
+
+.icons {
+    display: inline-block;
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    margin: 20px;
+}
