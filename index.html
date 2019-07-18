@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Crystal Collector Game</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+
+    <!--Main-->
+    <div class="container" id="mainSection">
+
+        <!--Header-->
+        <div class="row" id="headerSection">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+
+                    <h1 class="text-center">Crystal Collector Game</h1>
+
+                    <h2 class="text-center">Instructions:</h2>
+
+                    <p class="text-center">
+                        You will start with a random number. Press the crystals to match your number given. Each crystal value changes each game. Match the random number to win.
+                    </p>
+                    <p class="text-center">
+                        If you go over, you lose!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Game-->
+        <div class="row" id="gameSection">
+
+            <!--Random Number-->
+            <div class="col-md-6" id="randomSection">
+                <h3 class="text-center" id="random">Match Number:</h3>
+                <h1 class="numberBox text-center" id="randomNumber">100</h1>
+            </div>
+
+            <!--Total Points-->
+            <div class="col-md-6" id="totalPoints">
+                <h3 class="text-center" id="score">Your Total Score:</h3>
+                <h1 class="numberBox text-center" id="totalNumber">0</h1>
+            </div>
+
+        </div>
+
+        <!--Gems-->
+        <div class="row" id="gemSection">
+            <div class="col-md-12 text-center" id="buttonSection">
+
+                <!--Blue-->
+                <button id="blueButton" value="0"><img src="assets/images/bluegem.png" class="img-responsive icons"
+                        id="bluegem"></button>
+
+                <!--Red-->
+                <button id="redButton" value="0"><img src="assets/images/redgem.png" class="img-responsive icons"
+                        id="redgem"></button>
+
+                <!--Green-->
+                <button id="greenButton" value="0"><img src="assets/images/greengem.png" class="img-responsive icons"
+                        id="greengem"></button>
+
+                <!--Purple-->
+                <button id="purpleButton" value="0"><img src="assets/images/purplegem.png" class="img-responsive icons"
+                        id="purplegem"></button>
+
+            </div>
+        </div>
+
+        <!--Wins/Loss-->
+        <div class="row" id="scoreSection">
+
+            <!--Space-->
+            <div class="col-md-4"></div>
+
+            <!--Wins-->
+            <div class="col-md-2" id="winSection">
+                <h3 class="text-center" id="wins">Wins: 0</h3>
+            </div>
+
+            <!--Loss-->
+            <div class="col-md-2" id="lossSection">
+                <h3 class="text-center" id="losses">Losses: 0</h3>
+            </div>
+
+            <!--Space-->
+            <div class="col-md-4"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="assets/javascript/game.js"></script>
+
+</html>
