@@ -20,6 +20,10 @@ body {
     padding-bottom: 30px;
 }
 
+#instructionPara {
+    padding: 20px;
+}
+
 h1,
 h2,
 h3 {

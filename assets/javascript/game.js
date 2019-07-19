@@ -2,18 +2,18 @@ $(document).ready(function() {
 
     //Random Number 
 
-    let randomNum = [];
+    let random = [];
 
     for (var r = 10; r < 150; r++) {
-        randomNum.push(r);
+        random.push(r);
     }
 
     //Crystal Number
-    let crystalNum = [];
+    let crystal = [];
 
     for (let c = 1; c < 15; c++) {
 
-        crystalNum.push(c);
+        crystal.push(c);
     }
 
     let randomNum;
@@ -33,7 +33,7 @@ $(document).ready(function() {
     function pickRandomNumber(arr) {
 
         let x = arr[Math.floor(Math.random() * arr.length)];
-        randNumber = x;
+        randomNum = x;
         $("#randomNumber").html(randomNum);
 
         console.log("Random: " + randomNum);
@@ -71,9 +71,9 @@ $(document).ready(function() {
 
         crystalNumbers = [];
 
-        pickRandomNumber(randomNum);
+        pickRandomNumber(random);
 
-        pickRandomCrystals(crystalNum);
+        pickRandomCrystals(crystal);
 
         crystalValues(crystalNumbers);
 
@@ -83,8 +83,8 @@ $(document).ready(function() {
         alert(x);
     }
 
-    pickRandomNumber(randomNum);
-    pickRandomCrystals(crystalNum);
+    pickRandomNumber(random);
+    pickRandomCrystals(crystal);
     crystalValues(crystalNumbers);
 
     $("#button-1").on("click", function() {
@@ -113,7 +113,7 @@ $(document).ready(function() {
 
     $("button").on("click", function() {
         //Wins
-        if (totalScore == randNumber) {
+        if (totalScore == randomNum) {
 
             wins++;
             console.log(totalScore);
@@ -122,7 +122,7 @@ $(document).ready(function() {
 
 
             setTimeout(function() { gameReset("You Win!") }, 200);
-        } else if (totalScore > randNumber) {
+        } else if (totalScore > randomNum) {
 
             losses++;
             $("#totalNumber").html(totalScore);
