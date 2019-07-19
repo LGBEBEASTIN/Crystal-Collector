@@ -45,3 +45,8 @@ p {
     height: auto;
     margin: 20px;
 }
+
+button {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
