@@ -20,10 +20,6 @@ body {
     padding-bottom: 30px;
 }
 
-#instructionPara {
-    padding: 20px;
-}
-
 h1,
 h2,
 h3 {
@@ -32,6 +28,8 @@ h3 {
 
 p {
     font-family: 'Kalam', cursive;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .numberBox {
